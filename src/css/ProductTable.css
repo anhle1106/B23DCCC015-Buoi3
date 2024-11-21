@@ -1,0 +1,72 @@
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed; /* Ensures equal column width */
+}
+
+/* Table header and data cell styles */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Table header background */
+th {
+    background-color: #f4f4f4;
+}
+
+/* Button styles */
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Green button style for "Sửa" (Edit) */
+button.edit {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect for "Sửa" button */
+button.edit:hover {
+    background-color: #45a049; /* Slightly darker green */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Red button style for "Xóa" (Delete) */
+button.delete {
+    background-color: #f44336; /* Red background */
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect for "Xóa" button */
+button.delete:hover {
+    background-color: #e53935; /* Slightly darker red */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Center the table container */
+.product-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  height: 100vh; /* Vertically centers the table */
+}
+
+/* Footer row styles for total */
+tfoot td {
+  font-weight: bold;
+  text-align: right;
+}

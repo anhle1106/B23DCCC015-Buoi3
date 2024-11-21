@@ -1,0 +1,136 @@
+/* Style for the modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modal div {
+    margin-bottom: 10px;
+  }
+  
+  .modal input,
+  .modal select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .modal-buttons button {
+    width: 48%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+/* Style for the Add Product button */
+.add {
+    background-color: #4CAF50; /* Green color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* The button styles here won't interfere with .add styles */
+  }
+/* Style for the search input */
+.search-input {
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    padding: 8px 15px; /* Padding for spacing inside the input */
+    font-size: 14px; /* Font size */
+    width: 200px; /* Width of the input */
+    margin-left: 10px; /* Space between the input and the "Add Product" button */
+  }
+  
+  .search-input:focus {
+    outline: none; /* Remove the default outline on focus */
+    border-color: #4CAF50; /* Change border color on focus to green */
+  }
+  .pagination-controls {
+    display: flex;
+    justify-content: center; /* Horizontally center the controls */
+    align-items: center; /* Vertically center the controls */
+    margin-top: 20px;
+    position: absolute; /* Position the controls relative to the screen */
+    left: 50%; /* Move it to the center of the screen */
+    transform: translateX(-50%); /* Offset it by half its width to truly center */
+  }
+  
+  .pagination-controls button {
+    padding: 5px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-controls span {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  .form-input {
+    width: 100%; /* Ensures all input fields take full width */
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box; /* Includes padding in width calculation */
+  }
+  
